@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Azeret_Mono } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
 
 const azeretMono = Azeret_Mono({
   subsets: ["latin"],

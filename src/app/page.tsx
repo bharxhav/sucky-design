@@ -31,7 +31,14 @@ export default function Home() {
             </div>
           </div>
           <p className="text-center opacity-60">
-            can you believe it&apos;s free, and open source? #omg
+            can you believe it&apos;s free, and{" "}
+            <Link
+              href="https://github.com/bharxhav/sucky-design"
+              target="_blank"
+            >
+              open source?
+            </Link>{" "}
+            #omg
           </p>
           <div className="flex flex-row border border-gray-200 h-1/3">
             <div className="flex items-center justify-center">1</div>
