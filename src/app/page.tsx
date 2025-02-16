@@ -8,7 +8,11 @@ export default function Home() {
           <Link href="/">sucky design?</Link>
         </h1>
         <div>
-          <Link href="https://its-ours.org?by=sucky-design" target="_blank">
+          <Link
+            className="opacity-60"
+            href="https://its-ours.org?by=sucky-design"
+            target="_blank"
+          >
             its-ours.org
           </Link>
         </div>
