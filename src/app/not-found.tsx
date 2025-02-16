@@ -25,6 +25,7 @@ export default function NotFound() {
               alt="404 sucks, doesn't it?"
               width={200}
               height={200}
+              draggable={false}
             />
           </div>
           <h1 className="text-2xl font-bold py-4 text-center">

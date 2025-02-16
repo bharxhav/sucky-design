@@ -1,5 +1,7 @@
 import Link from "./elements/link";
 import Div from "./elements/div";
+import Select from "./elements/select";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -59,7 +61,12 @@ export default function Home() {
               legendPlacement="right"
               className="flex flex-1 items-center justify-center"
             >
-              3
+              <Div silent className="w-1/3 flex-col text-center items-center">
+                <p className="text-center opacity-80 p-2">my data science</p>
+                <p className="text-center opacity-80">==</p>
+                <p className="text-center opacity-80 p-2">your color theory</p>
+              </Div>
+              <Div silent className="w-full h-full"></Div>
             </Div>
           </Div>
           <Div silent className="flex flex-row h-1/3">
@@ -67,11 +74,21 @@ export default function Home() {
               1
             </Div>
             <Div
-              legend="lines"
-              legendPlacement="center"
-              className="flex w-2/3 items-center justify-center"
+              silent
+              className="flex w-2/3 items-center justify-around flex-row"
             >
-              2
+              <Div silent className="flex flex-row items-center justify-center">
+                <hr className="w-full border-white" />
+              </Div>
+              <p className="text-center opacity-80">inherit design</p>
+              <Select
+                options={[
+                  { value: "🙈", label: "🙈" },
+                  { value: "🙉", label: "🙉" },
+                  { value: "🙊", label: "🙊" },
+                ]}
+                legend="shrewd monkeys"
+              />
             </Div>
             <Div silent className="flex w-1/6 items-center justify-center">
               3
@@ -80,9 +97,17 @@ export default function Home() {
           <Div silent className="flex flex-row h-1/3">
             <Div
               legend="words"
-              className="flex-1 flex items-center justify-center"
+              className="flex-1 flex items-center justify-center flex-row"
             >
-              1
+              <Div className="h-full w-full"></Div>
+              <Image
+                className="w-1/3 h-full"
+                src="/logo.svg"
+                alt="word"
+                width={200}
+                height={200}
+                draggable={false}
+              ></Image>
             </Div>
             <Div silent className="flex flex-row w-1/3">
               <Div silent className="w-1/2 flex items-center justify-center">
