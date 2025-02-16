@@ -21,7 +21,35 @@ export default function Home() {
           <span className="button-text text-xl opacity-80">Build Yours</span>
         </Link>
       </div>
-      <div className="flex-1" />
+      <div className="flex-1 py-6">
+        <div className="h-full w-full max-w-7xl mx-auto flex flex-col">
+          <div className="flex flex-row border border-gray-200 h-1/3">
+            <div className="flex flex-row w-1/3">
+              <div className="w-1/2 flex items-center justify-center">1</div>
+              <div className="w-1/2 flex items-center justify-center">2</div>
+              <div className="flex-1 flex items-center justify-center">3</div>
+            </div>
+          </div>
+          <p className="text-center opacity-60">
+            can you believe it&apos;s free, and open source? #omg
+          </p>
+          <div className="flex flex-row border border-gray-200 h-1/3">
+            <div className="flex items-center justify-center">1</div>
+            <div className="flex-grow flex items-center justify-center">2</div>
+            <div className="flex items-center justify-center">3</div>
+          </div>
+          <p className="text-center opacity-60">
+            you and your llms can now be stylish, without even trying! #phew
+          </p>
+          <div className="flex flex-row border border-gray-200 h-1/3">
+            <div className="flex-1 flex items-center justify-center">1</div>
+            <div className="flex flex-row w-1/3">
+              <div className="w-1/2 flex items-center justify-center">2</div>
+              <div className="w-1/2 flex items-center justify-center">3</div>
+            </div>
+          </div>
+        </div>
+      </div>
       <p className="w-full max-w-6xl mx-auto text-left opacity-60 py-4">
         2 users, but 14 examples:
       </p>
