@@ -99,7 +99,16 @@ export default function Home() {
               legend="words"
               className="flex-1 flex items-center justify-center flex-row"
             >
-              <Div className="h-full w-full"></Div>
+              <Div
+                silent
+                className="h-full w-full flex flex-col items-center justify-center"
+              >
+                <p className="w-full text-left opacity-20 pl-4">branding</p>
+                <p className="w-full text-left opacity-40 pl-8">branding</p>
+                <p className="w-full text-center opacity-80">branding</p>
+                <p className="w-full text-right opacity-40 pr-8">branding</p>
+                <p className="w-full text-right opacity-20 pr-4">branding</p>
+              </Div>
               <Image
                 className="w-1/3 h-full"
                 src="/logo.svg"
