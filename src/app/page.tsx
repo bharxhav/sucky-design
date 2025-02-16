@@ -3,6 +3,16 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="flex flex-col h-full">
+      <header className="flex w-full justify-between items-center px-6 py-4">
+        <h1 className="m-0 p-0">
+          <Link href="/">Sucky Design?</Link>
+        </h1>
+        <div>
+          <Link href="https://its-ours.org?by=sucky-design" target="_blank">
+            its-ours.org
+          </Link>
+        </div>
+      </header>
       <div className="flex flex-col justify-center items-center w-full max-w-6xl mx-auto">
         <p className="py-4">define once, scale indefinitely</p>
 

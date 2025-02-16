@@ -24,16 +24,6 @@ export default function RootLayout({
         <link rel="icon" href="/logo.svg" />
       </head>
       <body className={`${azeretMono.className} h-full flex flex-col`}>
-        <header className="flex w-full justify-between items-center px-6 py-4">
-          <h1 className="m-0 p-0">
-            <Link href="/">Sucky Design?</Link>
-          </h1>
-          <div>
-            <Link href="https://its-ours.org?by=sucky-design" target="_blank">
-              its-ours.org
-            </Link>
-          </div>
-        </header>
         <main className="flex-1 h-full">{children}</main>
       </body>
     </html>
