@@ -1,13 +1,14 @@
 import Link from "next/link";
+import Div from "./elements/div";
 
 export default function Home() {
   return (
-    <div className="flex flex-col h-full">
+    <Div helper className="flex flex-col h-full">
       <header className="flex w-full justify-between items-center px-6 py-4">
         <h1 className="m-0 p-0">
           <Link href="/">sucky design?</Link>
         </h1>
-        <div>
+        <Div helper>
           <Link
             className="opacity-60"
             href="https://its-ours.org?by=sucky-design"
@@ -15,25 +16,34 @@ export default function Home() {
           >
             its-ours.org
           </Link>
-        </div>
+        </Div>
       </header>
-      <div className="flex flex-col justify-center items-center w-full max-w-4xl mx-auto">
+      <Div
+        helper
+        className="flex flex-col justify-center items-center w-full max-w-4xl mx-auto"
+      >
         <p className="py-4">define once, scale indefinitely</p>
 
         <Link className="build-button" href="/build">
-          <div className="glass-effect"></div>
+          <Div helper className="glass-effect"></Div>
           <span className="button-text text-xl opacity-80">Build Yours</span>
         </Link>
-      </div>
-      <div className="flex-1 py-6">
-        <div className="h-full w-full max-w-5xl mx-auto flex flex-col">
-          <div className="flex flex-row h-1/3">
-            <div className="flex flex-row w-1/3">
-              <div className="w-1/2 flex items-center justify-center">1</div>
-              <div className="w-1/2 flex items-center justify-center">2</div>
-              <div className="flex-1 flex items-center justify-center">3</div>
-            </div>
-          </div>
+      </Div>
+      <Div helper className="flex-1 py-6">
+        <Div helper className="h-full w-full max-w-5xl mx-auto flex flex-col">
+          <Div helper className="flex flex-row h-1/3">
+            <Div helper className="flex flex-row w-1/3">
+              <Div helper className="w-1/2 flex items-center justify-center">
+                1
+              </Div>
+              <Div helper className="w-1/2 flex items-center justify-center">
+                2
+              </Div>
+            </Div>
+            <Div helper className="flex flex-1 items-center justify-center">
+              3
+            </Div>
+          </Div>
           <p className="text-center opacity-60">
             can you believe it&apos;s free, and{" "}
             <Link
@@ -44,28 +54,40 @@ export default function Home() {
             </Link>{" "}
             #omg
           </p>
-          <div className="flex flex-row h-1/3">
-            <div className="flex items-center justify-center">1</div>
-            <div className="flex-grow flex items-center justify-center">2</div>
-            <div className="flex items-center justify-center">3</div>
-          </div>
+          <Div helper className="flex flex-row h-1/3">
+            <Div helper className="flex w-1/6 items-center justify-center">
+              1
+            </Div>
+            <Div helper className="flex w-2/3 items-center justify-center">
+              2
+            </Div>
+            <Div helper className="flex w-1/6 items-center justify-center">
+              3
+            </Div>
+          </Div>
           <p className="text-center opacity-60">
             {`now you and your llms can now be stylish, without even trying! ᕙ(⇀‸↼‶)ᕗ`}
           </p>
-          <div className="flex flex-row h-1/3">
-            <div className="flex-1 flex items-center justify-center">1</div>
-            <div className="flex flex-row w-1/3">
-              <div className="w-1/2 flex items-center justify-center">2</div>
-              <div className="w-1/2 flex items-center justify-center">3</div>
-            </div>
-          </div>
-        </div>
-      </div>
+          <Div helper className="flex flex-row h-1/3">
+            <Div helper className="flex-1 flex items-center justify-center">
+              1
+            </Div>
+            <Div helper className="flex flex-row w-1/3">
+              <Div helper className="w-1/2 flex items-center justify-center">
+                2
+              </Div>
+              <Div helper className="w-1/2 flex items-center justify-center">
+                3
+              </Div>
+            </Div>
+          </Div>
+        </Div>
+      </Div>
       <p className="w-full max-w-4xl mx-auto text-left opacity-60 py-4">
         2 users, but 14 examples:
       </p>
-      <div className="w-full pb-6 max-w-4xl mx-auto">
-        <div className="grid grid-cols-7 gap-4">
+      <Div helper className="w-full pb-6 max-w-4xl mx-auto">
+        <Div helper className="grid grid-cols-7 gap-4">
           {[
             "intxrnet",
             "apple",
@@ -90,8 +112,8 @@ export default function Home() {
               {name}
             </Link>
           ))}
-        </div>
-      </div>
-    </div>
+        </Div>
+      </Div>
+    </Div>
   );
 }
