@@ -12,7 +12,7 @@ export default function Home() {
         </Link>
       </div>
       <div className="flex-1" />
-      <p className="w-full max-w-6xl mx-auto text-left opacity-60">
+      <p className="w-full max-w-6xl mx-auto text-left opacity-60 py-4">
         2 users, but 14 examples:
       </p>
       <div className="w-full pb-6 max-w-6xl mx-auto">
