@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Gupter } from "next/font/google";
+import { Azeret_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 
-const gupter = Gupter({
+const azeretMono = Azeret_Mono({
   subsets: ["latin"],
   weight: ["400", "700"],
 });
@@ -15,13 +15,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body className={gupter.className}>
-        <div className="flex justify-between items-center p-4 m-2">
+    <html lang="en" className="h-full">
+      <body className={`${azeretMono.className} h-full`}>
+        <header className="flex justify-between items-center p-4 m-2">
           <h1>
             <Link href="/">Sucky Design?</Link>
           </h1>
@@ -30,8 +30,8 @@ export default function RootLayout({
               its-ours.org
             </Link>
           </div>
-        </div>
-        {children}
+        </header>
+        <main className="h-full">{children}</main>
       </body>
     </html>
   );
