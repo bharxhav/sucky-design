@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "./elements/link";
 import Div from "./elements/div";
 
 export default function Home() {
@@ -6,7 +6,9 @@ export default function Home() {
     <Div silent className="flex flex-col h-full">
       <header className="flex w-full justify-between items-center px-6 py-4">
         <h1 className="m-0 p-0">
-          <Link href="/">sucky design?</Link>
+          <Link silent href="/">
+            sucky design?
+          </Link>
         </h1>
         <Div silent>
           <Link
@@ -24,7 +26,7 @@ export default function Home() {
       >
         <p className="py-4 opacity-80">define once, scale indefinitely</p>
 
-        <Link className="build-button" href="/build">
+        <Link silent className="build-button" href="/build">
           <Div silent className="glass-effect"></Div>
           <span className="button-text text-xl opacity-80">Build Yours</span>
         </Link>
@@ -121,6 +123,7 @@ export default function Home() {
             "shadcn",
           ].map((name) => (
             <Link
+              silent
               key={name}
               href={`/${name}`}
               className="w-full text-center p-2"
