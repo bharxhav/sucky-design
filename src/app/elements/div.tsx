@@ -1,5 +1,5 @@
 interface DivProps {
-  helper?: boolean;
+  silent?: boolean;
   className?: string;
   legend?: string;
   legendPlacement?: "left" | "center" | "right";
@@ -12,12 +12,12 @@ export default function Div({
   className = "",
   legend,
   legendPlacement = "left",
-  helper = false,
+  silent = false,
   children,
 }: DivProps) {
   const combinedStyles = `${baseStyle} ${className}`.trim();
 
-  if (helper) {
+  if (silent) {
     return <div className={className}>{children}</div>;
   }
 
