@@ -6,9 +6,9 @@ export default function Home() {
       <div className="flex flex-col justify-center items-center w-full max-w-6xl mx-auto">
         <p className="py-4">define once, scale indefinitely</p>
 
-        <button className="cart-button">
+        <button className="build-button">
           <div className="glass-effect"></div>
-          <span className="button-text text-xl">Build Yours</span>
+          <span className="button-text text-xl opacity-80">Build Yours</span>
         </button>
       </div>
       <div className="flex flex-1 w-full max-w-6xl mx-auto"></div>
