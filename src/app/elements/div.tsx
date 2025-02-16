@@ -6,7 +6,7 @@ interface DivProps {
   children?: React.ReactNode;
 }
 
-const baseStyle = "border-2 border-dashed border-gray-800 rounded-md";
+const baseStyle = "border-2 border-gray-800 rounded-md";
 
 export default function Div({
   className = "",
@@ -18,6 +18,26 @@ export default function Div({
   const combinedStyles = `${baseStyle} ${className}`.trim();
 
   if (silent) {
+    if (legend) {
+      return (
+        <fieldset
+          className={`${className} ${
+            legendPlacement === "left"
+              ? "ml-4"
+              : legendPlacement === "right"
+              ? "mr-4"
+              : ""
+          }
+          text-sm
+          opacity-60
+          `}
+        >
+          <legend>{legend}</legend>
+          {children}
+        </fieldset>
+      );
+    }
+
     return <div className={className}>{children}</div>;
   }
 
