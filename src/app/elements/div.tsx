@@ -24,7 +24,21 @@ export default function Div({
   if (legend) {
     return (
       <fieldset className={combinedStyles}>
-        <legend style={{ textAlign: legendPlacement }}>{legend}</legend>
+        <legend
+          style={{ textAlign: legendPlacement }}
+          className={`${
+            legendPlacement === "left"
+              ? "ml-4"
+              : legendPlacement === "right"
+              ? "mr-4"
+              : ""
+          }
+          text-sm
+          opacity-60
+          `}
+        >
+          {legend}
+        </legend>
         {children}
       </fieldset>
     );

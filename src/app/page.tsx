@@ -22,7 +22,7 @@ export default function Home() {
         helper
         className="flex flex-col justify-center items-center w-full max-w-4xl mx-auto"
       >
-        <p className="py-4">define once, scale indefinitely</p>
+        <p className="py-4 opacity-80">define once, scale indefinitely</p>
 
         <Link className="build-button" href="/build">
           <Div helper className="glass-effect"></Div>
@@ -33,7 +33,21 @@ export default function Home() {
         <Div helper className="h-full w-full max-w-5xl mx-auto flex flex-col">
           <Div helper className="flex flex-row h-1/3">
             <Div helper className="flex flex-row w-1/3">
-              <Div className="w-1/2 flex items-center justify-center">1</Div>
+              <Div
+                helper
+                className="w-1/2 flex items-center justify-center flex-col"
+              >
+                <p className="text-center opacity-80">#omg</p>
+                <p className="text-justify opacity-80 p-4">
+                  can you believe it&apos;s free, and{" "}
+                  <Link
+                    href="https://github.com/bharxhav/sucky-design"
+                    target="_blank"
+                  >
+                    open source?
+                  </Link>{" "}
+                </p>
+              </Div>
               <Div helper className="w-1/2 flex items-center justify-center">
                 2
               </Div>
@@ -46,16 +60,6 @@ export default function Home() {
               3
             </Div>
           </Div>
-          <p className="text-center opacity-60">
-            can you believe it&apos;s free, and{" "}
-            <Link
-              href="https://github.com/bharxhav/sucky-design"
-              target="_blank"
-            >
-              open source?
-            </Link>{" "}
-            #omg
-          </p>
           <Div helper className="flex flex-row h-1/3">
             <Div helper className="flex w-1/6 items-center justify-center">
               1
@@ -71,9 +75,6 @@ export default function Home() {
               3
             </Div>
           </Div>
-          <p className="text-center opacity-60">
-            {`now you and your llms can now be stylish, without even trying! ᕙ(⇀‸↼‶)ᕗ`}
-          </p>
           <Div helper className="flex flex-row h-1/3">
             <Div
               legend="colors"
@@ -85,7 +86,15 @@ export default function Home() {
               <Div helper className="w-1/2 flex items-center justify-center">
                 2
               </Div>
-              <Div className="w-1/2 flex items-center justify-center">3</Div>
+              <Div
+                helper
+                className="w-1/2 flex items-center justify-center flex-col"
+              >
+                <p className="text-justify opacity-80 p-4">
+                  you and your llms can now be stylish, without even trying!
+                </p>
+                <p className="text-center opacity-80">ᕙ(⇀‸↼‶)ᕗ</p>
+              </Div>
             </Div>
           </Div>
         </Div>
