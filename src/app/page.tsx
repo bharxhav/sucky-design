@@ -17,7 +17,7 @@ export default function Home() {
           </Link>
         </div>
       </header>
-      <div className="flex flex-col justify-center items-center w-full max-w-6xl mx-auto">
+      <div className="flex flex-col justify-center items-center w-full max-w-4xl mx-auto">
         <p className="py-4">define once, scale indefinitely</p>
 
         <Link className="build-button" href="/build">
@@ -26,7 +26,7 @@ export default function Home() {
         </Link>
       </div>
       <div className="flex-1 py-6">
-        <div className="h-full w-full max-w-7xl mx-auto flex flex-col">
+        <div className="h-full w-full max-w-5xl mx-auto flex flex-col">
           <div className="flex flex-row h-1/3">
             <div className="flex flex-row w-1/3">
               <div className="w-1/2 flex items-center justify-center">1</div>
@@ -61,10 +61,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <p className="w-full max-w-6xl mx-auto text-left opacity-60 py-4">
+      <p className="w-full max-w-4xl mx-auto text-left opacity-60 py-4">
         2 users, but 14 examples:
       </p>
-      <div className="w-full pb-6 max-w-6xl mx-auto">
+      <div className="w-full pb-6 max-w-4xl mx-auto">
         <div className="grid grid-cols-7 gap-4">
           {[
             "intxrnet",
