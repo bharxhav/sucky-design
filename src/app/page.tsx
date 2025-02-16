@@ -5,7 +5,7 @@ export default function Home() {
     <div className="flex flex-col h-full">
       <header className="flex w-full justify-between items-center px-6 py-4">
         <h1 className="m-0 p-0">
-          <Link href="/">Sucky Design?</Link>
+          <Link href="/">sucky design?</Link>
         </h1>
         <div>
           <Link href="https://its-ours.org?by=sucky-design" target="_blank">

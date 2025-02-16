@@ -8,8 +8,8 @@ const azeretMono = Azeret_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sucky Design?",
-  description: "Sucky Design? is your design studio that makes sucky designs.",
+  title: "sucky design?",
+  description: "sucky design? is your design studio that makes sucky designs.",
 };
 
 export default function RootLayout({
