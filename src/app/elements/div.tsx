@@ -1,0 +1,34 @@
+interface DivProps {
+  helper?: boolean;
+  className?: string;
+  legend?: string;
+  legendPlacement?: "left" | "center" | "right";
+  children?: React.ReactNode;
+}
+
+const baseStyle = "border-2 border-dashed border-gray-800 rounded-md";
+
+export default function Div({
+  className = "",
+  legend,
+  legendPlacement = "left",
+  helper = false,
+  children,
+}: DivProps) {
+  const combinedStyles = `${baseStyle} ${className}`.trim();
+
+  if (helper) {
+    return <div className={className}>{children}</div>;
+  }
+
+  if (legend) {
+    return (
+      <fieldset className={combinedStyles}>
+        <legend style={{ textAlign: legendPlacement }}>{legend}</legend>
+        {children}
+      </fieldset>
+    );
+  }
+
+  return <div className={combinedStyles}>{children}</div>;
+}

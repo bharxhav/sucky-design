@@ -33,14 +33,16 @@ export default function Home() {
         <Div helper className="h-full w-full max-w-5xl mx-auto flex flex-col">
           <Div helper className="flex flex-row h-1/3">
             <Div helper className="flex flex-row w-1/3">
-              <Div helper className="w-1/2 flex items-center justify-center">
-                1
-              </Div>
+              <Div className="w-1/2 flex items-center justify-center">1</Div>
               <Div helper className="w-1/2 flex items-center justify-center">
                 2
               </Div>
             </Div>
-            <Div helper className="flex flex-1 items-center justify-center">
+            <Div
+              legend="lines"
+              legendPlacement="right"
+              className="flex flex-1 items-center justify-center"
+            >
               3
             </Div>
           </Div>
@@ -58,7 +60,11 @@ export default function Home() {
             <Div helper className="flex w-1/6 items-center justify-center">
               1
             </Div>
-            <Div helper className="flex w-2/3 items-center justify-center">
+            <Div
+              legend="text"
+              legendPlacement="center"
+              className="flex w-2/3 items-center justify-center"
+            >
               2
             </Div>
             <Div helper className="flex w-1/6 items-center justify-center">
@@ -69,16 +75,17 @@ export default function Home() {
             {`now you and your llms can now be stylish, without even trying! ᕙ(⇀‸↼‶)ᕗ`}
           </p>
           <Div helper className="flex flex-row h-1/3">
-            <Div helper className="flex-1 flex items-center justify-center">
+            <Div
+              legend="colors"
+              className="flex-1 flex items-center justify-center"
+            >
               1
             </Div>
             <Div helper className="flex flex-row w-1/3">
               <Div helper className="w-1/2 flex items-center justify-center">
                 2
               </Div>
-              <Div helper className="w-1/2 flex items-center justify-center">
-                3
-              </Div>
+              <Div className="w-1/2 flex items-center justify-center">3</Div>
             </Div>
           </Div>
         </Div>
