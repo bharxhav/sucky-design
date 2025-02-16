@@ -5,7 +5,7 @@ export default function NotFound() {
     <div className="flex flex-col h-full justify-center">
       <div className="grid grid-cols-1 gap-6 justify-center items-center w-full max-w-sm mx-auto">
         <h1 className="text-2xl font-bold py-4 text-center">
-          404 sucks, doesn't it?
+          404 sucks, doesn&apos;t it?
         </h1>
         <Link className="build-button" href="/build">
           <div className="glass-effect"></div>
