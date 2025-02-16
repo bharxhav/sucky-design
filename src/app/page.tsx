@@ -46,7 +46,7 @@ export default function Home() {
             <div className="flex items-center justify-center">3</div>
           </div>
           <p className="text-center opacity-60">
-            you and your llms can now be stylish, without even trying! #phew
+            {`now you and your llms can now be stylish, without even trying! ᕙ(⇀‸↼‶)ᕗ`}
           </p>
           <div className="flex flex-row border border-gray-200 h-1/3">
             <div className="flex-1 flex items-center justify-center">1</div>
