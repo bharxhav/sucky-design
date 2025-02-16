@@ -20,6 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full">
+      <head>
+        <link rel="icon" href="/logo.svg" />
+      </head>
       <body className={`${azeretMono.className} h-full flex flex-col`}>
         <header className="flex w-full justify-between items-center px-6 py-4">
           <h1 className="m-0 p-0">
