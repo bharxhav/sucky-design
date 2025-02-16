@@ -20,9 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full">
-      <body className={`${azeretMono.className} h-full`}>
-        <header className="flex justify-between items-center p-4 m-2">
-          <h1>
+      <body className={`${azeretMono.className} h-full flex flex-col`}>
+        <header className="flex w-full justify-between items-center px-6 py-4">
+          <h1 className="m-0 p-0">
             <Link href="/">Sucky Design?</Link>
           </h1>
           <div>
@@ -31,7 +31,7 @@ export default function RootLayout({
             </Link>
           </div>
         </header>
-        <main className="h-full">{children}</main>
+        <main className="flex-1 h-full">{children}</main>
       </body>
     </html>
   );
