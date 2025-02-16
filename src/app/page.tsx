@@ -51,11 +51,11 @@ export default function Home() {
                 </p>
               </Div>
               <Div silent className="w-1/2 flex items-center justify-center">
-                2
+                rule n <sup>o</sup> 1:
               </Div>
             </Div>
             <Div
-              legend="lines"
+              legend="colors"
               legendPlacement="right"
               className="flex flex-1 items-center justify-center"
             >
@@ -67,7 +67,7 @@ export default function Home() {
               1
             </Div>
             <Div
-              legend="text"
+              legend="lines"
               legendPlacement="center"
               className="flex w-2/3 items-center justify-center"
             >
@@ -79,14 +79,14 @@ export default function Home() {
           </Div>
           <Div silent className="flex flex-row h-1/3">
             <Div
-              legend="colors"
+              legend="words"
               className="flex-1 flex items-center justify-center"
             >
               1
             </Div>
             <Div silent className="flex flex-row w-1/3">
               <Div silent className="w-1/2 flex items-center justify-center">
-                2
+                :rule n <sup>o</sup> 3
               </Div>
               <Div
                 silent
