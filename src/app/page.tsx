@@ -23,7 +23,7 @@ export default function Home() {
       </div>
       <div className="flex-1 py-6">
         <div className="h-full w-full max-w-7xl mx-auto flex flex-col">
-          <div className="flex flex-row border border-gray-200 h-1/3">
+          <div className="flex flex-row h-1/3">
             <div className="flex flex-row w-1/3">
               <div className="w-1/2 flex items-center justify-center">1</div>
               <div className="w-1/2 flex items-center justify-center">2</div>
@@ -40,7 +40,7 @@ export default function Home() {
             </Link>{" "}
             #omg
           </p>
-          <div className="flex flex-row border border-gray-200 h-1/3">
+          <div className="flex flex-row h-1/3">
             <div className="flex items-center justify-center">1</div>
             <div className="flex-grow flex items-center justify-center">2</div>
             <div className="flex items-center justify-center">3</div>
@@ -48,7 +48,7 @@ export default function Home() {
           <p className="text-center opacity-60">
             {`now you and your llms can now be stylish, without even trying! ᕙ(⇀‸↼‶)ᕗ`}
           </p>
-          <div className="flex flex-row border border-gray-200 h-1/3">
+          <div className="flex flex-row h-1/3">
             <div className="flex-1 flex items-center justify-center">1</div>
             <div className="flex flex-row w-1/3">
               <div className="w-1/2 flex items-center justify-center">2</div>
