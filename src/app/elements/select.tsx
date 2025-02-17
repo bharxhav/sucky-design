@@ -6,7 +6,7 @@ interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
 }
 
 const baseStyle =
-  "border-2 border-dashed border-gray-800 rounded-md px-2 py-1 bg-transparent";
+  "border-2 border-gray-800 rounded-md px-2 py-1 bg-transparent";
 
 export default function Select({
   className = "",

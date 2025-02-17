@@ -2,6 +2,8 @@ import Link from "./elements/link";
 import Div from "./elements/div";
 import Select from "./elements/select";
 import Image from "next/image";
+import Input from "./elements/input";
+import Textarea from "./elements/textArea";
 
 export default function Home() {
   return (
@@ -70,8 +72,23 @@ export default function Home() {
             </Div>
           </Div>
           <Div silent className="flex flex-row h-1/3">
-            <Div silent className="flex w-1/6 items-center justify-center">
-              1
+            <Div
+              silent
+              className="flex w-1/6 items-center justify-center flex-col gap-4"
+            >
+              <Input
+                legend="input"
+                legendPlacement="center"
+                placeholder="say.."
+              />
+
+              <Textarea
+                legend="textarea"
+                legendPlacement="center"
+                placeholder="comment..."
+                rows={3}
+                resize="none"
+              />
             </Div>
             <Div
               silent
@@ -87,7 +104,8 @@ export default function Home() {
                   { value: "🙉", label: "🙉" },
                   { value: "🙊", label: "🙊" },
                 ]}
-                legend="shrewd monkeys"
+                legend="select"
+                legendPlacement="center"
               />
             </Div>
             <Div silent className="flex w-1/6 items-center justify-center">
@@ -95,10 +113,7 @@ export default function Home() {
             </Div>
           </Div>
           <Div silent className="flex flex-row h-1/3">
-            <Div
-              legend="words"
-              className="flex-1 flex items-center justify-center flex-row"
-            >
+            <Div className="flex-1 flex items-center justify-center flex-row">
               <Div
                 silent
                 className="h-full w-full flex flex-col items-center justify-center"
