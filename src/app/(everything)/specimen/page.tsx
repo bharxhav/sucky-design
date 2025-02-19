@@ -1,4 +1,4 @@
-import Div from "../elements/div";
+import Div from "../../elements/div";
 import { ReactNode } from "react";
 
 function Exhibit({
@@ -37,7 +37,7 @@ export default function SpecimenPage() {
 
 `}
       >
-<div></div>
+        <div></div>
       </Exhibit>
     </Div>
   );
