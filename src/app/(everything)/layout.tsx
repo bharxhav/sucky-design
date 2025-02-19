@@ -26,10 +26,14 @@ export default function SpecimenLayout({
       </header>
 
       <Div silent className="w-full pb-6 mx-auto text-gray-500">
-        <Div silent className="grid grid-cols-3 gap-8 items-center">
-          <Div silent className="grid grid-cols-5 gap-4">
+        <Div
+          silent
+          className="flex justify-between items-center max-w-5xl mx-auto gap-8"
+        >
+          <Div silent className="flex-1 flex flex-wrap gap-4 justify-end">
             {[
               "intxrnet",
+              "canonical",
               "apple",
               "google",
               "vercel",
@@ -37,32 +41,32 @@ export default function SpecimenLayout({
               "youtube",
               "amazon",
               "twitch",
+              "ibm",
               "j&j",
-              "canonical",
             ].map((name) => (
               <Link
                 silent
                 key={name}
                 href={`/${name}`}
-                className="w-full text-center p-2"
+                className="text-center px-3 py-1 hover:text-gray-700 whitespace-nowrap"
               >
                 {name}
               </Link>
             ))}
           </Div>
 
-          <div className="flex justify-center">
-            <img src="/logo.svg" alt="Logo" className="w-24" />
+          <div className="flex-shrink-0">
+            <p>sucky</p>
           </div>
 
-          <Div silent className="grid grid-cols-5 gap-4">
+          <Div silent className="flex-1 flex flex-wrap gap-4 justify-start">
             {[
-              "isthisanai",
-              "meta",
-              "github",
               "cloudflare",
               "pinterest",
+              "isthisanai",
               "linkedin",
+              "meta",
+              "github",
               "shadcn",
               "nokia",
               "cvs",
@@ -72,7 +76,7 @@ export default function SpecimenLayout({
                 silent
                 key={name}
                 href={`/${name}`}
-                className="w-full text-center p-2"
+                className="text-center px-3 py-1 hover:text-gray-700 whitespace-nowrap"
               >
                 {name}
               </Link>
